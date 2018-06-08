@@ -55,7 +55,8 @@ WHERE Stagioni.Stagione='Estate') AND Conta.Sottodivisione=G.Sottodivisione AND 
 FROM Conta)
 ORDER BY Principio; 
 
-/* Estrarre lo stato da cui provengono le piante che possiedono esattamente due principi e che hanno solo un utilizzo alimentare*/
+/* Estrarre lo stato da cui provengono le piante che possiedono esattamente due principi e che hanno solo un utilizzo alimentare
+*/
 CREATE VIEW StAlim AS
 SELECT DISTINCT(S.Nome)
 FROM Stati S, PresenzeT T, PresenzeA A, Piante P 
